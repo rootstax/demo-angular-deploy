@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/demo-angular-deployy",
+            "outputPath": "dist/demo-angular-deploy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,11 +66,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "demo-angular-deployy:build"
+            "browserTarget": "demo-angular-deploy:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo-angular-deployy:build:production"
+              "browserTarget": "demo-angular-deploy:build:production"
             }
           }
         },
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "demo-angular-deployy:serve"
+            "devServerTarget": "demo-angular-deploy:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "demo-angular-deployy:serve:production"
+              "devServerTarget": "demo-angular-deploy:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "demo-angular-deployy",
+  "defaultProject": "demo-angular-deploy",
   "cli": {
     "analytics": "85b32403-ac25-4497-b13d-073d202d7ee2"
   }
